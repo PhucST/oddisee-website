@@ -33,6 +33,7 @@ img {
   font-weight: 800;
   background: #fff;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -53,7 +54,7 @@ img {
   color: #222;
 }
 
-..hero-text .hide {
+.hero-text .hide {
   display: none;
 }
 

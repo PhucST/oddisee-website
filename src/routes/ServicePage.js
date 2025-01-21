@@ -10,7 +10,7 @@ function ServicePage() {
   const [cardData, setCardData] = useState(null);
 
   const handleClick = () => {
-    localStorage.setItem("cardData", JSON.stringify(cardData)); // Lưu dữ liệu vào localStorage
+    localStorage.setItem("cardData", JSON.stringify(cardData));
   };
 
   useEffect(() => {
