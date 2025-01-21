@@ -1,0 +1,122 @@
+/* Container */
+.hero-container {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+.hero-wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: rgba(255, 165, 0, 0.1);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 930px;
+  display: grid;
+  gap: 16px;
+}
+
+.small-text {
+  font-size: 14px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Search Box */
+.search-box {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+@media (min-width: 640px) {
+  .search-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.label {
+  opacity: 0.7;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  background: #f3f4f6;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid orange;
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-value {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Range Slider */
+.range-container {
+  background: #f3f4f6;
+  margin-top: 7px;
+  padding: 14px 12px;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range-input {
+  width: 100%;
+  appearance: none;
+  background: linear-gradient(to right, orange, red);
+  height: 6px;
+  border-radius: 9999px;
+  /* margin-top: 8px; */
+  outline: none;
+}
+
+/* Search Button */
+.search-btn {
+  background: linear-gradient(to right, orange, red);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-btn:hover {
+  transform: translateX(-50%) scale(1.05);
+}

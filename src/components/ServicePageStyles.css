@@ -1,0 +1,136 @@
+.wrap-content {
+  margin: 30px 30px 30px 30px;
+}
+
+.wrap-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.book-now-btn {
+  background-color: #9be0c8;
+  color: #112211;
+  padding: 10px 16px;
+  border-radius: 4px;
+  width: 150px;
+  border: 1px;
+  transition: 0.2s ease-in-out;
+  float: right;
+}
+
+.book-now-btn:hover {
+  background-color: #82cbb2;
+}
+
+.wrap-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.wrap-content h2 {
+  display: flex;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.26px;
+  color: #112211;
+  margin-top: 30px;
+  border-top: 1px solid #112211;
+  padding-top: 20px;
+}
+
+.img-card {
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.heading h1 {
+  font-family: TradeGothic LT Extended;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 30.31px;
+  color: #112211;
+}
+
+.text-price {
+  display: flex;
+  align-items: first baseline;
+}
+
+.text-price p {
+  font-family: Montserrat;
+  color: #ff8682;
+}
+
+.price {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 39.01px;
+}
+
+.night {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 17.07px;
+}
+
+.ov-text p {
+  text-align: start;
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  opacity: 75%;
+  font-family: Montserrat;
+}
+
+.book-now-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.local-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.local-text p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #112211;
+  opacity: 75%;
+}
+
+@media screen and (max-width: 850px) {
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 7px;
+  }
+
+  .wrap-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .book-now-btn {
+    height: 44px;
+  }
+
+  .book-now-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .local-text {
+    justify-content: flex-start;
+  }
+}
