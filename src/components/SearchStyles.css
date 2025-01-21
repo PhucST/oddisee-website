@@ -15,7 +15,7 @@
 
 .hero-content {
   width: 100%;
-  max-width: 930px;
+  max-width: 1330px;
   display: grid;
   gap: 16px;
 }
@@ -33,7 +33,7 @@
 .search-box {
   background: white;
   border-radius: 8px;
-  padding: 16px;
+  padding: 16px 20px;
   position: relative;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -47,13 +47,15 @@
 
 @media (min-width: 640px) {
   .search-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10px;
   }
 }
 
 .label {
   opacity: 0.7;
   display: block;
+  float: left;
 }
 
 .input {
@@ -73,7 +75,7 @@
 .price-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .price-value {
@@ -81,11 +83,17 @@
   font-size: 18px;
 }
 
+.max-price-input {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
 /* Range Slider */
 .range-container {
   background: #f3f4f6;
-  margin-top: 7px;
-  padding: 14px 12px;
+  /* margin-top: 7px; */
+  padding: 14px 18px;
   border-radius: 9999px;
   display: flex;
   justify-content: center;

@@ -12,10 +12,10 @@ export const MenuItems = [
     icon: "fa-solid fa-circle-info",
   },
   {
-    title: "Service",
+    title: "Find Stays",
     url: "/service",
     cName: "nav-links",
-    icon: "fa-solid fa-briefcase",
+    icon: "fa-solid fa-hotel",
   },
   {
     title: "Contact",

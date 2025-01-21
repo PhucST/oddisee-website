@@ -1,0 +1,54 @@
+.wrap-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.right-room-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.right-room-content p {
+    font-size: 20px;
+    color: #112211;
+    line-height: 19.5px;
+}
+
+.left-room-content {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    float: right;
+    gap: 40px;
+}
+
+.text-price-room {
+    display: flex;
+    align-items: first baseline;
+}
+
+.img-room {
+    max-width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.room-btn {
+    background-color: #9be0c8;
+  color: #112211;
+  padding: 12px 16px;
+  border-radius: 4px;
+  width: 150px;
+  border: 1px;
+  transition: 0.2s ease-in-out;
+  float: right;
+}
+
+.room-btn:hover {
+    background-color: #82cbb2;
+}

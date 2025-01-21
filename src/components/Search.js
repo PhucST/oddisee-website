@@ -24,11 +24,17 @@ const Search = () => {
               </div>
               <div>
                 <label htmlFor="date" className="label">
-                  Date
+                  Check In
                 </label>
                 <input type="date" name="date" id="date" className="input" />
               </div>
               <div>
+                <label htmlFor="date" className="label">
+                  Check Out
+                </label>
+                <input type="date" name="date" id="date" className="input" />
+              </div>
+              <div className="max-price-input">
                 <label htmlFor="price" className="label block">
                   <div className="price-wrapper">
                     <p>Max Price</p>

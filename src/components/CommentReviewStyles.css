@@ -1,0 +1,40 @@
+.border-opa {
+    border-top: 1px solid #112211;
+    opacity: 25%;
+    margin: 20px 0px;
+}
+
+.wrap-content-review-comment {
+    display: flex;
+    gap: 20px;
+}
+
+.img-avatar {
+    width: 45px;
+    height: 45px;
+}
+
+.wrap-content-text-review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 94%;
+}
+
+.heading-text-review {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+    gap: 14px;
+}
+
+.heading-text-review p {
+    opacity: 75%;
+}
+
+.wrap-content-text-review p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17.07px;
+}

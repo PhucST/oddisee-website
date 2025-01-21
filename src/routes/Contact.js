@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import AboutImg from "../assets/2.jpg";
 import Footer from "../components/Footer";
 import React from "react";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
   return (
@@ -14,7 +15,7 @@ function Contact() {
         title="Contact"
         btnClass="hide"
       />
-
+      <ContactForm />
       <Footer />
     </>
   );

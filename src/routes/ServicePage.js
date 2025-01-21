@@ -4,6 +4,10 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import "../components/ServicePageStyles.css";
 import Footer from "../components/Footer";
+import CommentReview from "../components/CommentReview";
+import Gallery from "../components/Gallery";
+import Room from "../components/Room";
+import Amenities from "../components/Amenities";
 
 function ServicePage() {
   const { heading } = useParams(); // Lấy heading từ URL
@@ -34,11 +38,29 @@ function ServicePage() {
               <p className="price">${cardData.price}</p>
               <p className="night">/night</p>
             </div>
+            <div className="right-icon-review-mobile">
+              <div className="local-text">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>{cardData.location}</p>
+              </div>
+              <div className="review-des">
+                <p className="review-data">{cardData.review}</p>
+                <p className="review-text">{cardData.textReview}</p>
+                <p className="number-review">{cardData.numReview} reviews</p>
+              </div>
+            </div>
           </div>
           <div className="book-now-div">
-            <div className="local-text">
-              <i className="fa-solid fa-location-dot"></i>
-              <p>Viet Nam</p>
+            <div className="right-icon-review">
+              <div className="local-text">
+                <i className="fa-solid fa-location-dot"></i>
+                <p>{cardData.detailLocation}</p>
+              </div>
+              <div className="review-des">
+                <p className="review-data">{cardData.review}</p>
+                <p className="review-text">{cardData.textReview}</p>
+                <p className="number-review">{cardData.numReview} reviews</p>
+              </div>
             </div>
             <div className="book-now-btn">
               <Link to={`/`} className="btn-text" onClick={handleClick}>
@@ -47,6 +69,10 @@ function ServicePage() {
             </div>
           </div>
         </div>
+        <div className="card-img">
+          {/* <img alt="hotel-img" src={cardData.image}></img> */}
+          <Gallery />
+        </div>
         <div>
           <h2>Overview</h2>
           <div className="ov-text">
@@ -54,17 +80,33 @@ function ServicePage() {
           </div>
           <h2>Available Rooms</h2>
           <div className="ov-text">
-            <p>Coming soon...</p>
+            <div>
+              <Room />
+            </div>
           </div>
           <h2>Amenities</h2>
           <div className="amenities-icon">
             <div className="ov-text">
-              <p>Coming soon...</p>
+              <Amenities />
             </div>
           </div>
-          <h2>Review</h2>
+          <h2>Reviews</h2>
           <div className="ov-text">
-            <p>Coming soon...</p>
+            <div className="heading-review">
+              <div className="total-review">
+                <h1>{cardData.review}</h1>
+                <div className="text-num-review">
+                  <h3>{cardData.textReview}</h3>
+                  <p>{cardData.numReview} verified review</p>
+                </div>
+              </div>
+              <div className="give-review-btn">
+                <button>Give your review</button>
+              </div>
+            </div>
+            <div>
+              <CommentReview />
+            </div>
           </div>
         </div>
       </div>

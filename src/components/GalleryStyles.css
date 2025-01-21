@@ -1,0 +1,33 @@
+.gallery-container {
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các hình */
+    border-radius: 12px; /* Bo góc */
+    overflow: hidden; /* Ẩn phần dư */
+  }
+  
+  .main-image {
+    flex: 2; /* Ảnh chính chiếm nhiều không gian */
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .side-images {
+    flex: 1; /* Kích thước nhỏ hơn */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .side-images img {
+    width: 100%;
+    height: calc(50% - 5px); /* Chia thành 2 phần bằng nhau */
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  

@@ -1,0 +1,29 @@
+.wrap-content-amen {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 400px;
+    font-size: 17px;
+}
+
+.warp-amen {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.left-content-amen {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-content-amen {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.more {
+    color: #FF8682;
+}
