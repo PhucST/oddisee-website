@@ -7,6 +7,7 @@ import Service from "./routes/Service";
 import Contact from "./routes/Contact";
 import ServicePage from "./routes/ServicePage";
 import PaymentPage from "./routes/PaymentPage";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function App() {
   return (
