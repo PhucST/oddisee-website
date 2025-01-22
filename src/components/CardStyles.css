@@ -12,7 +12,8 @@
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 14px;
+  column-gap: 14px;
+  row-gap: 28px;
 }
 
 .t-card {
@@ -58,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-top: 4px;
   margin-bottom: 8px;
 }
 

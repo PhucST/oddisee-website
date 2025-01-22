@@ -9,7 +9,7 @@ const Footer = () => {
           <p>Travel And Foods</p>
         </div>
         <div>
-          <a href="/">
+          <a href="https://web.facebook.com/oddiseeee">
             <i className="fa-brands fa-facebook-square"></i>
           </a>
           <a href="/">

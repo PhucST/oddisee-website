@@ -8,7 +8,7 @@
 
 .warp-amen {
     display: flex;
-    align-items: center;
+    align-items: first baseline;
     gap: 9px;
 }
 
@@ -26,4 +26,12 @@
 
 .more {
     color: #FF8682;
+}
+
+@media screen and (max-width: 850px) {
+    .wrap-content-amen {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+    }
 }

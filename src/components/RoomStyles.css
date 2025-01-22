@@ -16,6 +16,7 @@
     font-size: 20px;
     color: #112211;
     line-height: 19.5px;
+    margin: 0%;
 }
 
 .left-room-content {
@@ -51,4 +52,14 @@
 
 .room-btn:hover {
     background-color: #82cbb2;
+}
+
+@media screen and (max-width: 850px){
+    .right-room-content p {
+        line-height: 28px;
+    }
+
+    .left-room-content {
+        display: none;
+    }
 }

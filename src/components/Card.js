@@ -1,6 +1,6 @@
 import "./CardStyles.css";
 import CardData from "./CardData";
-import KS1 from "../assets/ks1.webp";
+import KS1 from "../assets/ks1-2.webp";
 import KS2 from "../assets/ks2.jpg";
 import KS3 from "../assets/KS3.jpg";
 import KS4 from "../assets/KS4.jpg";

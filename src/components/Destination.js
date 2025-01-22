@@ -1,7 +1,7 @@
 import DestionationData from "./DestinationData";
 import "./DestinationStyles.css";
-import Mountain1 from "../assets/1.jpg";
-import Mountain2 from "../assets/2.jpg";
+import DaNang1 from "../assets/Golden-Bridge-Featured.jpg";
+import DaNang2 from "../assets/cau-rong-da-nang-2.jpg";
 import Mountain3 from "../assets/79591-Tuong-Dai-Chua-Kito-Vua.avif";
 import Mountain4 from "../assets/79466-Back-Beach.avif";
 
@@ -13,15 +13,9 @@ const Destination = () => {
       <DestionationData
         className="first-des"
         heading="Đà Nẵng, Việt Nam"
-        text="Đà Nẵng là trung tâm của 3 di sản văn hóa thế giới là Cố đô Huế, phố
-      cổ Hội An và thánh địa Mỹ Sơn. Không chỉ nổi tiếng với các khu du
-      lịch văn hóa, Đà Nẵng còn nổi tiếng với các cảnh quan thiên nhiên
-      đẹp đẽ và hùng vĩ. Với các bãi biển cùng với các hoạt động trải
-      nghiệm như tắm biển, lướt sóng, du thuyền… sẽ đem lại sự thú vị cho
-      du khách. Du khách còn có cơ hội thưởng thức các đặc sản như mì
-      Quảng, gỏi cuốn Nam Ô…"
-        img1={Mountain1}
-        img2={Mountain2}
+        text="Nằm ở miền Trung Việt Nam, Đà Nẵng là một trong những thành phố du lịch hấp dẫn nhất với sự kết hợp hài hòa giữa thiên nhiên, văn hóa và ẩm thực. Được mệnh danh là 'Thành phố đáng sống nhất Việt Nam', Đà Nẵng thu hút du khách nhờ những bãi biển dài xanh trong, những cây cầu độc đáo và các danh lam thắng cảnh nổi tiếng. Ngoài cảnh đẹp, Đà Nẵng còn có nền ẩm thực phong phú với những món ăn đặc trưng như mì Quảng, bánh tráng cuốn thịt heo, hay hải sản tươi sống tại các quán ven biển. Đặc biệt, từ Đà Nẵng, du khách có thể dễ dàng di chuyển đến Hội An – phố cổ mang vẻ đẹp hoài niệm, hoặc tham quan Cố đô Huế với những công trình kiến trúc triều Nguyễn."
+        img1={DaNang1}
+        img2={DaNang2}
       />
 
       <DestionationData

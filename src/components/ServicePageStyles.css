@@ -34,7 +34,7 @@
 
 .wrap-content h2 {
   display: flex;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
   line-height: 25.26px;
   color: #112211;
@@ -81,10 +81,10 @@
 
 .ov-text p {
   text-align: start;
-  margin-top: 6px;
-  font-size: 18px;
+  margin-top: 14px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 19.5px;
+  line-height: 30px;
   opacity: 75%;
   font-family: Montserrat;
   text-align: justify;
@@ -115,7 +115,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 7px;
+  gap: 12px;
 }
 
 .review-des {
@@ -179,6 +179,11 @@
   justify-content: center;
   align-items: baseline;
 }
+
+.text-num-review p {
+  padding: 0px;
+  margin: 0px;
+} 
 
 .give-review-btn button {
   background: #8DD3BB;

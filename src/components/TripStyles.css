@@ -61,4 +61,8 @@
     width: 100%;
     margin-bottom: 1.5rem;
   }
+
+  .t-card p {
+    text-align: start;
+  }
 }
