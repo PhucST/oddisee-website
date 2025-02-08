@@ -66,8 +66,8 @@ function Card() {
   ];
 
   return (
-    <div className="trip">
-      <div className="tripcard">
+    <div className="card">
+      <div className="chilcard">
         {tripData.map((trip, index) => (
           <CardData
             key={index}

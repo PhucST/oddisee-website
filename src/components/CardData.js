@@ -1,4 +1,4 @@
-import "./CardStyles.css";
+import "./Card";
 import { Link } from "react-router-dom";
 
 function CardData(props) {
@@ -7,21 +7,21 @@ function CardData(props) {
   };
 
   return (
-    <div className="t-card">
-      <div className="t-image">
+    <div className="t-card-2">
+      <div className="t-image-2">
         <img src={props.image} alt="card" />
       </div>
-      <div className="heading-wrap">
+      <div className="heading-wrap-2">
         <h4>{props.heading}</h4>
         <div className="local-text">
           <i className="fa-solid fa-location-dot"></i>
           <p>{props.location}</p>
         </div>
       </div>
-      <div className="describe-text">
+      <div className="describe-text-2">
         <p>{props.text}</p>
       </div>
-      <div className="price-container">
+      <div className="price-container-2">
         <div>
           <p className="price-value">${props.price}</p>
         </div>
