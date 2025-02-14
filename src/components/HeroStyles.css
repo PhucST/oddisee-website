@@ -21,6 +21,7 @@ img {
 }
 
 .hero-text {
+  
   position: absolute;
   top: 55%;
   left: 50%;
@@ -29,17 +30,18 @@ img {
 }
 
 .hero-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 800;
-  background: #fff;
+  background: #02e5fe;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hero-text p {
-  font-size: 1.3rem;
-  color: #fff;
+  font-size: 1.8rem;
+  color: #ffd500;
   padding: 0.5rem 0 2rem 0;
 }
 
@@ -53,7 +55,11 @@ img {
   letter-spacing: 2px;
   color: #222;
 }
-
+.hero-text .show:hover{
+  color:#f2ff00;
+  background-color: #02e5fe;
+  box-shadow: 1px 1px rgb(0, 94, 255);
+}
 .hero-text .hide {
   display: none;
 }
