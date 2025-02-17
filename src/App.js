@@ -1,5 +1,7 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import ReactGA from "react-ga4";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
@@ -9,6 +11,12 @@ import PaymentPage from "./routes/PaymentPage";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location]);
+
   return (
     <div className="App">
       <Routes>
@@ -22,4 +30,3 @@ export default function App() {
     </div>
   );
 }
-
