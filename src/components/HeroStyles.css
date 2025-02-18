@@ -21,7 +21,6 @@ img {
 }
 
 .hero-text {
-  
   position: absolute;
   top: 55%;
   left: 50%;
@@ -33,16 +32,19 @@ img {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   font-weight: 800;
-  background: #02e5fe;
+  background: #fff;
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  /* -webkit-text-fill-color: transparent; */
+  text-shadow: 2px 2px 30px rgba(0, 0, 0, 1);
 }
 
 .hero-text p {
   font-size: 1.8rem;
-  color: #ffd500;
+  color: #fff;
   padding: 0.5rem 0 2rem 0;
+  text-shadow: 10px 8px 3px rgba(0, 0, 0, 1);
 }
 
 .hero-text .show {
@@ -56,10 +58,9 @@ img {
   color: #222;
 }
 .hero-text .show:hover{
-  color:#f2ff00;
-  background-color: #02e5fe;
-  box-shadow: 1px 1px rgb(0, 94, 255);
+  background-color: #F0F0F0;
 }
+
 .hero-text .hide {
   display: none;
 }

@@ -23,7 +23,11 @@ function CardData(props) {
       </div>
       <div className="price-container-2">
         <div>
-          <p className="price-value">${props.price}</p>
+          <p>Starting from</p>
+          <div className="price-wr">
+            <p className="price-value">${props.price}</p>
+            <p>/night</p>
+          </div>
         </div>
         <div className="bool-btn">
           <Link
@@ -31,7 +35,7 @@ function CardData(props) {
             className="btn-text"
             onClick={handleClick}
           >
-            Book Now
+            View Place
           </Link>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -12,10 +12,6 @@ import Amenities from "../components/Amenities";
 function ServicePage() {
   const { heading } = useParams(); // Lấy heading từ URL
   const [cardData, setCardData] = useState(null);
-
-  const handleClick = () => {
-    localStorage.setItem("cardData", JSON.stringify(cardData));
-  };
 
   useEffect(() => {
     const storedData = localStorage.getItem("cardData");
@@ -63,9 +59,14 @@ function ServicePage() {
               </div>
             </div>
             <div className="book-now-btn">
-              <Link to={`/`} className="btn-text" onClick={handleClick}>
+              <a
+                href={cardData.url}
+                className="btn-text"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Book Now
-              </Link>
+              </a>
             </div>
           </div>
         </div>

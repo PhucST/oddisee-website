@@ -1,8 +1,14 @@
 import "./SearchStyles.css";
-import React from "react";
+import React, { useState }from "react";
 
-const Search = () => {
-  const [priceValue, setPriceValue] = React.useState(30);
+const Search = ({ onSearch }) => {
+
+  const [location, setLocation] = useState("");
+  const [guests, setGuests] = useState("1 guest");
+
+  const handleSearch = () => {
+    onSearch(location, guests);
+  };
 
   return (
     <div className="hero-container">
@@ -12,7 +18,7 @@ const Search = () => {
             <div className="search-grid">
               <div>
                 <label htmlFor="destination" className="label">
-                  Search your Destination
+                  Enter Destination
                 </label>
                 <input
                   type="text"
@@ -20,6 +26,8 @@ const Search = () => {
                   id="destination"
                   placeholder="Can Tho"
                   className="input"
+                  value={location}
+                  onChange={(e) => setLocation(e.target.value)}
                 />
               </div>
               <div>
@@ -34,29 +42,31 @@ const Search = () => {
                 </label>
                 <input type="date" name="date" id="date" className="input" />
               </div>
-              <div className="max-price-input">
-                <label htmlFor="price" className="label block">
+              <div className="room-guest">
+                <label htmlFor="guests" className="label block">
                   <div className="price-wrapper">
-                    <p>Max Price</p>
-                    <p className="price-value">$ {priceValue}</p>
+                    <p>Rooms & Guests</p>
+                  </div>
+                  <div className="dropdown-room-guest">
+                    <select
+                      id="guests"
+                      className="dropdown"
+                      value={guests}
+                      onChange={(e) => setGuests(e.target.value)}
+                    >
+                      <option value="1 guest" className="option-text">1 guest</option>
+                      <option value="2 guest" className="option-text">2 guests</option>
+                      <option value="3 guest" className="option-text">3 guests</option>
+                      <option value="4 guest" className="option-text">4 guests</option>
+                      <option value="4-6 guest" className="option-text">4-6 guests</option>
+                    </select>
                   </div>
                 </label>
-                <div className="range-container">
-                  <input
-                    type="range"
-                    name="price"
-                    id="price"
-                    className="range-input"
-                    min="150"
-                    max="1000"
-                    value={priceValue}
-                    step="10"
-                    onChange={(e) => setPriceValue(e.target.value)}
-                  />
-                </div>
               </div>
             </div>
-            <button className="search-btn">Search Now</button>
+            <button className="search-btn" onClick={handleSearch}>
+              Search Now
+            </button>
           </div>
         </div>
       </div>
