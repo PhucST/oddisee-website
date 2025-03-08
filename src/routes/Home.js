@@ -13,7 +13,7 @@ function Home() {
         cName="hero"
         heroImg={HomeHero}
         title="Your Journey Your Story"
-        text="Chosse Your Favourite Destiantion."
+        text="Choose Your Favourite Destination."
         buttonText="Travel Plan"
         url="/service"
         btnClass="show"

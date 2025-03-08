@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import ReactGA from "react-ga4";
+import Food from "./routes/Food"
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Service from "./routes/Service";
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/service/:heading" element={<ServicePage />} />
         <Route path="/service/:heading/payment" element={<PaymentPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/food" element={<Food />}/>
       </Routes>
     </div>
   );
