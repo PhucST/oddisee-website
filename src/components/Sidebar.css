@@ -1,0 +1,155 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .text-18 {
+    font-size: 18px;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .single-field {
+    position: relative;
+  }
+  
+  .single-field input {
+    width: 100%;
+    padding: 10px 50px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+  }
+  
+  .pl-50 {
+    padding-left: 50px;
+  }
+  
+  .border-light {
+    border: 1px solid #e5e7eb;
+  }
+  
+  .text-dark-1 {
+    color: #1a1a1a;
+  }
+  
+  .h-50 {
+    height: 50px;
+  }
+  
+  .rounded-8 {
+    border-radius: 8px;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .h-full {
+    height: 100%;
+  }
+  
+  .icon-search {
+    display: inline-block;
+  }
+  
+  .text-20 {
+    font-size: 20px;
+  }
+  
+  .px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .sidebar-checkbox .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .y-gap-10 {
+    margin: -5px 0;
+  }
+  
+  .y-gap-10 > * {
+    margin: 5px 0;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .text-15 {
+    font-size: 15px;
+  }
+  
+  .ml-10 {
+    margin-left: 10px;
+  }
+  
+  .text-light-1 {
+    color: #6b7280;
+  }
+  
+  .pb-30 {
+    padding-bottom: 30px;
+  }
+  
+  .x-gap-10 {
+    margin: 0 -5px;
+  }
+  
+  .x-gap-10 > * {
+    margin: 0 5px;
+  }
+  
+  .y-gap-30 {
+    margin: -15px 0;
+  }
+  
+  .y-gap-30 > * {
+    margin: 15px 0;
+  }
+  
+  .col-12 {
+    width: 100%;
+  }
+  
+  .js-price-rangeSlider .rc-slider {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+  }
+  
+  .js-price-rangeSlider .rc-slider-handle {
+    width: 20px;
+    height: 20px;
+    background: #3554d1;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .text-14 {
+    font-size: 14px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }

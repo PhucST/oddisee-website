@@ -7,16 +7,27 @@ import Card from "../components/Card";
 import { useState } from "react";
 
 function Service() {
-  const [searchData, setSearchData] = useState({ location: "", guests: "1 guest" });
+  const [searchData, setSearchData] = useState({
+    location: "",
+    guests: "1 guest",
+    checkIn: null,
+    checkOut: null,
+    minReview: "0",
+  });
 
-  const handleSearch = (location, guests) => {
-    setSearchData({ location, guests });
+  const handleSearch = (searchParams) => {
+    setSearchData(searchParams);
   };
 
   return (
     <>
       <Navbar />
-      <Hero cName="hero-mid" heroImg={AboutImg} title="Find Stays" btnClass="hide" />
+      <Hero
+        cName="hero-mid"
+        heroImg={AboutImg}
+        title="Find Stays"
+        btnClass="hide"
+      />
       <Search onSearch={handleSearch} />
       <Card searchData={searchData} />
       <Footer />

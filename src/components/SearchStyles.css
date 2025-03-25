@@ -48,6 +48,21 @@
   padding: 16px 0;
 }
 
+/* Giữ lại các phần còn lại */
+.react-date-picker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dropdown {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 @media (min-width: 640px) {
   .search-grid {
     grid-template-columns: repeat(4, 1fr);
