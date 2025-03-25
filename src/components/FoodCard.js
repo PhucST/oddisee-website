@@ -15,7 +15,7 @@ function FoodCard(props) {
       <div className="price-container-2">
         <div>
           <div className="price-wr">
-            <p className="price-value">${props.price}</p>
+            <p className="price-value">{props.price}</p>
           </div>
         </div>
       </div>
