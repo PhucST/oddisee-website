@@ -19,7 +19,7 @@ export const MenuFood = [
         image:BanhCong,
         heading:"Bánh cống",
         text:"Bánh cống được làm từ bột gạo pha với nước cốt dừa, nhân đậu xanh bùi bùi, thịt băm đậm đà và tôm tươi giòn ngọt. Khi chiên, bánh vàng ươm, tỏa hương thơm nức mũi, khiến thực khách không thể cưỡng lại. Bánh cống thường được ăn kèm với rau sống, bún tươi và nước chấm chua ngọt. Vị béo ngậy của bánh, vị bùi của đậu xanh, vị ngọt của tôm và vị cay nồng của nước chấm hòa quyện vào nhau tạo nên một hương vị khó quên." ,  
-        price:"10.000 VNĐ - 30.000 VNĐ"
+        price:"10.000 - 30.000 VNĐ"
     },
     {
         image:Nem,

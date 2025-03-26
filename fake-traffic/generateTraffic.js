@@ -75,7 +75,7 @@ async function simulateUserVisit(url, numVisits) {
 
 (async () => {
   const websiteUrl = 'https://oddisee-website.netlify.app'; // Thay bằng URL website của bạn
-  const numVisits = 50; // Số lượt truy cập (tương ứng với số phiên)
+  const numVisits = 100; // Số lượt truy cập (tương ứng với số phiên)
 
   console.log(`Starting to simulate ${numVisits} visits to ${websiteUrl}...`);
   await simulateUserVisit(websiteUrl, numVisits);
